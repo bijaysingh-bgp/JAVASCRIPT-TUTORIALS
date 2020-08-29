@@ -1,4 +1,5 @@
 var animals = ["fish", "chikan", "dog", "cat", "horse", "rabbit"];
+var ani = ["fish", "chikan", "dog", "cat", "horse", "rabbit"];
 
 var randomIndex = Math.floor(Math.random() * animals.length) + 1;
 console.log(" Index value is ", +randomIndex);

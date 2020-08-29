@@ -24,7 +24,7 @@ do {
     ); // dynamiclly count the arry using task.length
 
   }
-
+  // var letters = /^[0-9a-zA-Z ]+$/; // number and character check
   var letters = /^[A-Za-z]+$/; // store character aA - zZ 
   var input_wrong = question1.match(letters); // Match the inputed value and store in input_wrong variables
 
