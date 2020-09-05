@@ -1,0 +1,28 @@
+<!- Login check of username those are exist in Arrya ->
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login check with Tenary Operator </title>
+    </head>
+
+    <body>
+
+        <div id="output"> Hello World</div>
+
+        <script>
+            var userName = ["bijay", "shreeya", "roshishna", "sandhya", "ajay"];
+            var userInput = prompt(" Enter the Username  : ?");
+            var checkUser = userName.indexOf(userInput) > -1 ? true :
+                false; // check the inputed username has exist or not
+
+            var output = document.getElementById("output"); // store "div" properties to variable output
+            // output.innerHTML = userName.indexOf(userInput) > -1 ? "welcome" : "denied"
+            output.innerHTML = checkUser ? "welcome" : "denied"; //store value from "checkUser" and dispaly the message
+            output.innerHTML += " :" + userInput; // store ":" and "userInput" value and display
+        </script>
+    </body>
+
+    </html>

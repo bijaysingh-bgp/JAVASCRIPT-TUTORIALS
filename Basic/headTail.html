@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Heads & Tails </title>
+</head>
+
+<body>
+
+    <p> To Check Inputed are Heads or Tails </p>
+
+    <div id="output"> </div>
+
+    <script>
+        display = "Something went Wrong";
+        var output = document.getElementById("output");
+
+        var question = prompt("Enter Heads or Tails ", "heads/tails");
+        var result = question == "heads" ? 1 : 0; // check by tenary operator and store in result
+        console.log(result);
+
+        var randomNumber = Math.floor(Math.random() * 2); // floor number and multiply by 2
+        console.log(randomNumber);
+
+        if (result == randomNumber) {
+            display = " you guessed are cottect";
+        } else {
+            display = "you guessed are wrong";
+        }
+
+        output.innerHTML = display;
+    </script>
+</body>
+
+</html>

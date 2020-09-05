@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+
+<body>
+    <dir id="output"> Switch Statement</dir>
+
+    <script>
+        var myTime = prompt("Enter your time to know work Schedule ?", " enter time");
+        var output = document.getElementById("output");
+        var display;
+
+        switch (Number(myTime)) { // " Number" are convert string to number
+
+            case 7:
+                display = "Wake of Time ";
+                break;
+            case 8:
+                display = "Breakfast Time ";
+                break;
+            case 10:
+                display = "Study Time ";
+                break;
+            default:
+                display = " Nothing to do are remaining any more ... ";
+
+        }
+
+        output.innerHTML = display;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+
+    <div id="output">Hello World </div>
+    <input type="text" id="val">
+
+    <script>
+        var output = document.getElementById('output'); // define variable and store div property value 
+        var val = document.getElementById('val'); // define variable and store the "input" properites 
+        val.value = output.innerHTML; // val.value are store the value of "div" and will display in text box
+    </script>
+
+</body>
+
+</html>

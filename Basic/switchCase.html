@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+
+<body>
+    <dir id="output"> Switch Statement</dir>
+
+    <script>
+        var answer = "Something Went Wrong";
+        var output = document.getElementById("output");
+
+        question = prompt("Enter your Number to display the work Schedule ?", " enter any thing");
+        ramdomNumber = Math.floor(Math.random() * 6);
+
+
+        switch (ramdomNumber) { // " Number" are convert string to number
+
+            case 0:
+                answer = "Wake of Time ";
+                break;
+            case 1:
+                answer = "Breakfast Time ";
+                break;
+            case 2:
+                answer = "Study Time ";
+                break;
+            case 3:
+                answer = " Watch News";
+                break;
+            default:
+                answer = " I don't know about you that . ";
+
+        }
+
+        output.innerHTML = "you asked me " + question + "<br> I think that " + answer;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Check via If Statement</title>
+</head>
+
+<body>
+
+    <div id="output">Hello</div>
+
+    <script>
+        var userName = ["bijay", "shreeya", "roshishna", "sandhya", "ajay"];
+        var userInput = prompt(" Enter the Username  : ?");
+        var output = document.getElementById("output");
+
+        if (userName.indexOf(userInput) > -1) {
+            alert("Hello");
+            output.innerHTML = "Welcome it was True : " + userInput;
+        } else {
+            output.innerHTML = "Denied was not true : " + userInput;
+        }
+    </script>
+
+</body>
+
+</html>
